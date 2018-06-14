@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<config>
+<modules>
+    <Contact_Captcha>
+        <version>0.1.0</version>
+    </Contact_Captcha>
+</modules>
+ <global>
+    <models>
+        <contact_captcha>
+            <class>Contact_Captcha_Model</class>
+        </contact_captcha>
+    </models>
+    <events>
+        <controller_action_predispatch_contacts_index_post>
+            <observers>
+                <captcha>
+                    <type>model</type>
+                    <class>contact_captcha/observer</class>
+                    <method>checkContacts</method>
+                </captcha>
+            </observers>
+        </controller_action_predispatch_contacts_index_post>
+    </events>
+</global>
+<default>
+	<captcha>
+        <frontend>
+            <areas>
+                <contacts>
+                    <label>Contact Page</label>
+                </contacts>
+            </areas>
+        </frontend>
+    </captcha>
+	<customer> 
+		<captcha> 
+			<always_for> 
+				<contacts>1</contacts> 
+			</always_for> 
+		</captcha> 
+	</customer>
+</default>
+</config>
