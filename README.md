@@ -1,17 +1,18 @@
-# magento1_captcha_contact_form
+----------------------------
+Magento Captcha Contact Form
+----------------------------
+
+Description
+-----------
 With this plugin you can Insert the Captcha into the contact form in Magento 1
 
-DESCRIZIONE
------------
-Questo modulo consente di attivare il CAPTCHA di Magento nella pagina dei contatti.
-
-INSTALLAZIONE
+Setup
 -------------
-1. Decomprimere il pacchetto.
-2. Modificare il nome della directory del template app/design/frontend/DEFAULT del pacchetto con quello del proprio template
-3. caricare il pacchetto nel proprio magento
-4. Andare in System -> Configuration -> Customer Configuration -> Captcha
-5. Selezionare "Contact Page" nella sezione CAPTCHA
-6. Salvare
-7 Svuotare la cache
-8. Verificare che il captcha sia visibile nella pagina dei contatti
+1. Unzip archive in your local path
+2. You must edit the name of directory of the template app/design/frontend/DEFAULT with yours template
+3. Upload the package on your Magento site
+4. Go to System -> Configuration -> Customer Configuration -> Captcha
+5. Select "Contact Page" in CAPTCHA section
+6. Save
+7. Empty the cache
+8. Verify that the captcha showed in contacts page
