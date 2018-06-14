@@ -16,3 +16,8 @@ Setup
 6. Save
 7. Empty the cache
 8. Verify that the captcha showed in contacts page
+
+
+Debug
+-----
+Plugin tested with Magento 1.9
